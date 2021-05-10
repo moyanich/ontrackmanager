@@ -1,0 +1,451 @@
+/*
+ * Sign in Forms
+ */
+.header {
+  min-height: 0 !important;
+}
+/*
+ * Sidebar
+ */
+ul#metismenu {
+  padding: 0;
+}
+ul#metismenu ul {
+  list-style: none;
+  padding-left: 10px;
+}
+/*
+ * Argon Overides
+ */
+.nav-container .navbar li {
+  margin: 0 20px;
+  color: #000;
+}
+.nav-container .navbar li .nav-link {
+  padding: 0;
+}
+.nav-container .navbar li.t-date,
+.nav-container .navbar li.t-user {
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 900px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-vertical.navbar-expand-md {
+    max-width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-vertical.navbar-expand-md.fixed-left + .main-content {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 768px) {
+  #securityDash.main-content .container-fluid {
+    padding-right: 19px !important;
+    padding-left: 19px !important;
+  }
+}
+/*
+ * Menu
+ */
+.navbar-horizontal .navbar-brand img {
+  height: 80px;
+}
+@media (min-width: 768px) {
+  .navbar-vertical.navbar-expand-md .navbar-brand-img {
+    max-height: 5.5rem;
+  }
+}
+.nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-tabs .nav-item.show .nav-link {
+  color: #212529;
+  font-weight: 900;
+  background-color: #cecece;
+}
+/*
+Colors
+*/
+.bg-gradient-primary {
+  background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+}
+.bg-gradient-secondary {
+  background: linear-gradient(87deg, #f5365c 0, #fb6340 100%) !important;
+}
+.green {
+  color: #2dce89;
+}
+.red {
+  color: #f5365c;
+}
+b,
+strong {
+  font-weight: 800;
+}
+.btn-outline-secondary {
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+.switch {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  width: 100px;
+  height: 30px;
+  padding: 3px;
+  margin: 0 10px 10px 0;
+  background: linear-gradient(to bottom, #eeeeee, #ffffff 25px);
+  background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff 25px);
+  border-radius: 18px;
+  box-shadow: inset 0 -1px #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  box-sizing: content-box;
+}
+.switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #eceeef;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  box-sizing: content-box;
+}
+.switch-label:before,
+.switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+  box-sizing: content-box;
+}
+.switch-label:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #aaaaaa;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label:after {
+  content: attr(data-on);
+  left: 11px;
+  color: #FFFFFF;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+  background: #fb382e;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+.switch-handle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #ffffff 40%, #f0f0f0);
+  background-image: -webkit-linear-gradient(top, #ffffff 40%, #f0f0f0);
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(to bottom, #eeeeee, #ffffff);
+  background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+  left: 74px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+/* Transition
+========================== */
+.switch-label,
+.switch-handle {
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+}
+/*
+ * Dashboard
+ */
+header {
+  position: relative;
+}
+.sidebar-brand {
+  height: auto !important;
+}
+.sidebar-brand img {
+  height: 90px;
+}
+/*
+* Dashboard - Admin
+*/
+.card.emp-card .photo {
+  width: auto;
+  overflow: hidden;
+  /*width: 180px;
+        height: 180px;
+        overflow: hidden;    
+        //border-radius: 50%; */
+}
+.card.emp-card .card-text {
+  margin-bottom: 5px;
+}
+.emp-profile {
+  padding: 20px;
+  border-right: 4px solid rgba(50, 50, 93, 0.11);
+  margin-right: 20px;
+}
+.emp-profile img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  object-position: top;
+}
+.card-profile .card-body,
+.card-log .card-body {
+  padding: 0.5rem 1.5rem;
+}
+/*
+ * Dashboard - Security
+ */
+@media (min-width: 768px) {
+  .security-dasboard .form-log img.img-thumbnail {
+    position: absolute;
+    top: -120px;
+    height: 300px;
+    right: -20px;
+    padding: 30px;
+  }
+}
+.security-dasboard .emp-photo {
+  height: 250px;
+}
+.security-logo {
+  height: 100px;
+  padding-right: 20px;
+}
+#myTab .nav-link.active,
+#myTab .nav-item.show .nav-link {
+  color: #ffffff;
+  background-color: #172b4d;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#myTab .nav-link {
+  background: #fff;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 600;
+}
+#myTab .nav-link:hover {
+  color: #ffffff;
+  background-color: #172b4d;
+}
+div#myTabContent {
+  padding: 0;
+}
+.dash-title {
+  text-transform: uppercase !important;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: underline;
+}
+/*
+ * Forms
+*/
+.loginForm input {
+  padding-left: 10px !important;
+}
+label {
+  color: #212529;
+  font-size: 15px;
+  font-weight: 900;
+}
+.form-row {
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .form-log img.img-thumbnail {
+    position: absolute;
+    top: 130px;
+    height: 300px;
+    right: 30px;
+  }
+}
+.form-control:focus,
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  font-weight: 600;
+  color: #0044cc !important;
+}
+textarea.form-control {
+  min-height: 50px !important;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8898aa;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8898aa;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8898aa;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8898aa;
+}
+.input-group-text {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*
+ * Employees
+*/
+div#empTable_info {
+  font-size: 14px;
+  text-align: left;
+}
+.page-item .page-link,
+.page-item span {
+  margin: 0 5px;
+}
+.pgEmpDetails .nav-tabs .nav-link {
+  font-weight: 900;
+}
+/*
+ * Tables
+*/
+.table img.img-thumbnail {
+  width: 30px;
+  height: 30px;
+}
+caption.btn-toolbar {
+  display: table-caption;
+  flex-wrap: nowrap;
+  justify-content: normal;
+}
+caption.btn-toolbar button,
+caption.btn-toolbar html [type='button'] {
+  color: #172b4d;
+  border-color: #172b4d;
+}
+.empReport,
+.deptReport {
+  display: none;
+}
+.table .thead-light th {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+div#empTable_info,
+div#empTable_paginate {
+  margin-top: 30px;
+}
+div#empTable_length {
+  text-align: left;
+}
+div#empTable_length label {
+  font-size: 12px;
+}
+ul.pagination li#empTable_previous a,
+ul.pagination li#empTable_next a {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_filter label {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 22px 0;
+}
+/*
+ * Tabs
+*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-tabs .nav-item.show .nav-link {
+  color: #212529;
+  font-weight: 600;
+  background-color: #00cef1;
+}
+.nav-tabs .nav-link {
+  padding: 10px;
+}
+.tab-content {
+  padding: 20px 5px;
+}
+/*
+ * Images
+*/
+.emp-img {
+  max-width: 300px;
+}
+.pgEmpDetails .fa-calendar:hover,
+.pageReport .fa-calendar:hover,
+i.ni:hover {
+  cursor: pointer;
+}
+.profile-status {
+  padding: 30px;
+  background: #201F1E;
+  color: #fff;
+}
+.profile-status label {
+  color: #fff;
+}

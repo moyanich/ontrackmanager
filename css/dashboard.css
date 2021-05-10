@@ -1,0 +1,249 @@
+/*
+ * Dashboard
+ */
+header {
+  position: relative;
+}
+.sidebar-brand {
+  height: auto !important;
+}
+.sidebar-brand img {
+  height: 90px;
+}
+/*
+* Dashboard - Admin
+*/
+.card.emp-card .photo {
+  width: auto;
+  overflow: hidden;
+  /*width: 180px;
+        height: 180px;
+        overflow: hidden;    
+        //border-radius: 50%; */
+}
+.card.emp-card .card-text {
+  margin-bottom: 5px;
+}
+.emp-profile {
+  padding: 20px;
+  border-right: 4px solid rgba(50, 50, 93, 0.11);
+  margin-right: 20px;
+}
+.emp-profile img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  object-position: top;
+}
+.card-profile .card-body,
+.card-log .card-body {
+  padding: 0.5rem 1.5rem;
+}
+/*
+ * Dashboard - Security
+ */
+@media (min-width: 768px) {
+  .security-dasboard .form-log img.img-thumbnail {
+    position: absolute;
+    top: -120px;
+    height: 300px;
+    right: -20px;
+    padding: 30px;
+  }
+}
+.security-dasboard .emp-photo {
+  height: 250px;
+}
+.security-logo {
+  height: 100px;
+  padding-right: 20px;
+}
+#myTab .nav-link.active,
+#myTab .nav-item.show .nav-link {
+  color: #ffffff;
+  background-color: #172b4d;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#myTab .nav-link {
+  background: #fff;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 600;
+}
+#myTab .nav-link:hover {
+  color: #ffffff;
+  background-color: #172b4d;
+}
+div#myTabContent {
+  padding: 0;
+}
+.dash-title {
+  text-transform: uppercase !important;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: underline;
+}
+/*
+ * Forms
+*/
+.loginForm input {
+  padding-left: 10px !important;
+}
+label {
+  color: #212529;
+  font-size: 15px;
+  font-weight: 900;
+}
+.form-row {
+  margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .form-log img.img-thumbnail {
+    position: absolute;
+    top: 130px;
+    height: 300px;
+    right: 30px;
+  }
+}
+.form-control:focus,
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  font-weight: 600;
+  color: #0044cc !important;
+}
+textarea.form-control {
+  min-height: 50px !important;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8898aa;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8898aa;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8898aa;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8898aa;
+}
+.input-group-text {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*
+ * Employees
+*/
+div#empTable_info {
+  font-size: 14px;
+  text-align: left;
+}
+.page-item .page-link,
+.page-item span {
+  margin: 0 5px;
+}
+.pgEmpDetails .nav-tabs .nav-link {
+  font-weight: 900;
+}
+/*
+ * Tables
+*/
+.table img.img-thumbnail {
+  width: 30px;
+  height: 30px;
+}
+caption.btn-toolbar {
+  display: table-caption;
+  flex-wrap: nowrap;
+  justify-content: normal;
+}
+caption.btn-toolbar button,
+caption.btn-toolbar html [type='button'] {
+  color: #172b4d;
+  border-color: #172b4d;
+}
+.empReport,
+.deptReport {
+  display: none;
+}
+.table .thead-light th {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+div#empTable_info,
+div#empTable_paginate {
+  margin-top: 30px;
+}
+div#empTable_length {
+  text-align: left;
+}
+div#empTable_length label {
+  font-size: 12px;
+}
+ul.pagination li#empTable_previous a,
+ul.pagination li#empTable_next a {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_filter label {
+  font-size: 12px;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 22px 0;
+}
+/*
+ * Tabs
+*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-tabs .nav-item.show .nav-link {
+  color: #212529;
+  font-weight: 600;
+  background-color: #00cef1;
+}
+.nav-tabs .nav-link {
+  padding: 10px;
+}
+.tab-content {
+  padding: 20px 5px;
+}
+/*
+ * Images
+*/
+.emp-img {
+  max-width: 300px;
+}
+.pgEmpDetails .fa-calendar:hover,
+.pageReport .fa-calendar:hover,
+i.ni:hover {
+  cursor: pointer;
+}
+.profile-status {
+  padding: 30px;
+  background: #201F1E;
+  color: #fff;
+}
+.profile-status label {
+  color: #fff;
+}
